@@ -10,6 +10,9 @@ jobs:
         - name: execute shell script
           run: ./command.sh  
 
+        - name: list files
+          run: ls -lrt
+
         # - name: execute all commands
         #   run: |
         #     echo ¨my first Github action¨
