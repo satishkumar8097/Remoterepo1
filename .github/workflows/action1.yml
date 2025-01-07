@@ -1,7 +1,7 @@
 name: first workflow
 on: push
 jobs:
-    first_job:
+    ASCII_job:
         runs-on: ubuntu-latest
         steps:
         - name: Checkout
@@ -12,6 +12,9 @@ jobs:
             echo ¨my first Github action¨
             ls -lrt
             cat .gitignore
+
+        - name: install cowsay package
+          run: apt-get install cowsay -y    
         
         - name: generate ASCII art
           run: cowsay -f dragon 
