@@ -1,0 +1,14 @@
+name: first workflow
+on: push
+    jobs:
+        first_job:
+            runs-on: ubuntu-latest
+            steps:
+            - name: welcome message
+              run: echo ¨my first Github action¨
+
+            - name: list files
+              run: ls -lrt
+
+            - name: view the file
+              run: cat .gitignore
