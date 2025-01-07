@@ -1,3 +1,4 @@
+#!/bin/sh
 echo ¨my first Github action¨
 ls -lrt
 cat .gitignore
