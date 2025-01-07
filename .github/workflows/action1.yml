@@ -14,7 +14,7 @@ jobs:
             cat .gitignore
 
         - name: install cowsay package
-          run: apt-get install cowsay -y    
+          run: sudo apt-get install cowsay -y    
         
         - name: generate ASCII art
           run: cowsay -f dragon 
