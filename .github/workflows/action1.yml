@@ -7,17 +7,20 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v4
 
-        - name: execute all commands
-          run: |
-            echo ¨my first Github action¨
-            ls -lrt
-            cat .gitignore
+        - name: execute shell script
+          run: ./command.sh  
 
-        - name: install cowsay package
-          run: sudo apt-get install cowsay -y    
+        # - name: execute all commands
+        #   run: |
+        #     echo ¨my first Github action¨
+        #     ls -lrt
+        #     cat .gitignore
+
+        # - name: install cowsay package
+        #   run: sudo apt-get install cowsay -y    
         
-        - name: generate ASCII art
-          run: cowsay -f dragon 
+        # - name: generate ASCII art
+        #   run: cowsay -f dragon 
 
         # - name: list files
         #   run: ls -lrt
