@@ -6,12 +6,18 @@ jobs:
         steps:
         - name: Checkout
           uses: actions/checkout@v4
-          
-        - name: welcome message
-          run: echo ¨my first Github action¨
 
-        - name: list files
-          run: ls -lrt
+        - name: execute all commands
+          run: |
+            echo ¨my first Github action¨
+            ls -lrt
+            cat .gitignore
+        
+        - name: generate ASCII art
+          run: cowsay -f dragon 
 
-        - name: view the file
-          run: cat .gitignore
+        # - name: list files
+        #   run: ls -lrt
+
+        # - name: view the file
+        #   run: cat .gitignore
